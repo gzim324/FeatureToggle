@@ -1,0 +1,39 @@
+{
+    "name": "michalzimka/feature-toggle",
+    "type": "symfony-bundle",
+    "description": "some description",
+    "keywords": ["Symfony", "bundle", "feature", "toggle", "feature-toggle"],
+    "homepage": "https://github.com/gzim324/FeatureToggle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michal Zimka",
+            "email": "michal.zimka@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "FeatureToggle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FeatureToggle\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "symfony/framework-bundle": "^6.0",
+        "symfony/console": "^6.0"
+    },
+    "extra": {
+        "symfony": {
+            "allow-contrib": true,
+            "require": "6.4.*",
+            "recipe": true
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.5"
+    }
+}
