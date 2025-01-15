@@ -1,7 +1,7 @@
 {
     "name": "michalzimka/feature-toggle",
     "type": "symfony-bundle",
-    "description": "some description",
+    "description": "Feature Toggle Bundle for Symfony provides an easy way to manage feature flags in your Symfony applications.",
     "keywords": ["Symfony", "bundle", "feature", "toggle", "feature-toggle"],
     "homepage": "https://github.com/gzim324/FeatureToggle",
     "license": "MIT",
