@@ -19,10 +19,14 @@ class Configuration implements ConfigurationInterface
         $treeBuilder
             ->getRootNode()
             ->children()
-            ->scalarNode('repository')
-            ->isRequired()
-            ->cannotBeEmpty()
-            ->end()
+                ->scalarNode('repository')
+                    ->isRequired()
+                    ->cannotBeEmpty()
+                ->end()
+                ->arrayNode('command_list')
+                    ->scalarPrototype()->end()
+                    ->defaultValue([])
+                ->end()
             ->end();
 
         return $treeBuilder;

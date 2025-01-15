@@ -18,7 +18,7 @@ class FeatureManagerTest extends TestCase
     {
         $repositoryMock = $this->createMock(FeatureToggleRepositoryInterface::class);
         $repositoryMock->method('findByName')->willReturn(
-            (new FeatureToggle())->setName('test')->setActive(true)
+            new FeatureToggle()->setName('test')->setActive(true)
         );
 
         $featureManager = new FeatureManager($repositoryMock);

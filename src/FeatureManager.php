@@ -9,7 +9,7 @@ use FeatureToggle\Repository\FeatureToggleRepositoryInterface;
  *
  * @author Michal Zimka <michal.zimka@gmail.com>
  */
-class FeatureManager
+readonly class FeatureManager
 {
     public function __construct(
         private FeatureToggleRepositoryInterface $repository,
