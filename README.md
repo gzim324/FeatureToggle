@@ -102,7 +102,7 @@ The `php bin/console toggle:list` command allows you to manage and view the list
     - `false` - Returns only inactive feature toggles.
     - If the option is not provided, the full list of feature toggles is displayed.
 
-### Usage Examples
+### Usage
 
 1. Display the full list of feature toggles:
    ```bash
